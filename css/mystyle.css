@@ -1,0 +1,529 @@
+.mystyle{
+    height: 90px;
+    width: 254px;
+    color: #FEFFFC;
+    font-size: smaller;
+}
+
+.whiteTxt {
+    color: #FEFFFC;
+}
+
+.cover {
+    height: 100%;
+}
+
+#bluebluebackground {
+    background-image: linear-gradient(to top, #5da9e9, #5295ce, #4782b3, #3d6f99, #335d80);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.front,
+.back{
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front{
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.thumbnail {
+    height: 120px;
+    width: 240px;
+    margin:8px;
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+
+
+.inputfile {
+    display: block;
+    margin: auto;
+    width: 95px;
+    height: 25px;
+    overflow: hidden;
+}
+
+#imageUpload
+{
+    display: none;
+}
+
+#profileImage
+{   display: block;
+    margin: auto;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#profile-container {
+    
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+}
+
+#profile-container img {
+    width: 95px;
+    height: 95px;
+}
+
+.bigthumbnail {
+    height: 160px;
+    width: 320px;
+    margin:8px;
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    right: 32%;
+    top: 21.5%;
+    height: 18px;
+    color: #fff;
+    line-height: 44px;
+    font-size: 18px;
+    text-align: right;
+    width: 18px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.close.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.curDf {
+    cursor: default;
+}
+
+.curP {
+    cursor: pointer;
+}
+
+.curX {
+    cursor: not-allowed;
+}
+
+
+.poster {
+    height: 160px;
+    width: 320px;
+    margin:8px;
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: default;
+}
+
+.mypic {
+    height: 60px;
+    width: 120px;
+    margin:5px;
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: default;
+}
+
+
+.back{
+    transform: rotateY(180deg);
+}
+
+
+
+footer{
+    bottom: 0;
+    position: relative;
+    background: orangered;
+    color: white;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0 0 0 0;
+
+}
+.edit{
+    float: right;
+    padding-right: 10px;
+}
+
+html {
+    min-height: 100%;
+}
+
+.cannotSee {
+    visibility: hidden;
+}
+
+.footerAbsolute {
+    bottom: 0;
+    position: absolute;
+    background: #333333;
+    color: white;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0 0 0 0;
+}
+
+body{
+    padding-top: 65px;
+    min-height: 100%;
+}
+
+#wallpaper{
+    background-image: url(coolWallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* Full height */
+    height: 100%; 
+
+  /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+.dropdown-toggle:after {
+    display:none;
+}
+
+.nav-item {
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+.menu {
+    transform: scale(1);
+    transition: 0.4s;
+    display: inline;
+}
+
+.menu.hide-item {
+    transform: scale(0);
+}
+.usericon {
+    position: absolute;
+    top: 10%;
+    left: 75%;
+}
+
+.search-form {
+    position: absolute;
+    top: 10%;
+    Left: 53%;
+    transform: translateX(0);
+    background: transparent;
+    width: 500px;
+    height: 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    
+}
+
+.search-form.active {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.4s;
+    transform: translateX(-45%);
+}
+
+.search-form input {
+    width: 68%;
+    height: 44px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    
+}
+
+.search-form input::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+
+
+.presstosearch {
+    cursor: pointer;
+    right: 10px;
+}
+
+.newsHeader {
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.newsbox {
+    background-color: transparent;
+    width: 1000px;
+    border: 0.5px grey;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+hr { 
+    size: 3px;
+    color: white;
+    display: block;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.reviewsbox {
+    background-color: #ffcd94;
+    width: 750px;
+    border: 1px solid beige;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.userFrontHeader {
+    justify-content: center;
+    text-align: center;
+}
+
+.loginUserForm {
+    justify-content: center;
+    text-align: center;
+    vertical-align: center;
+    background-color: white;
+    border: 1px grey;
+    border-style: solid;
+    margin: auto;
+    padding: 10px;
+    width: 250px;
+    height: 275px;
+}
+
+
+.registerUserForm {
+    justify-content: center;
+    text-align: center;
+    vertical-align: center;
+    background-color: white;
+    border: 1px grey;
+    border-style: solid;
+    margin: auto;
+    padding: 10px;
+    width: 250px;
+    height: 375px;
+}
+
+.gameDetailTitle {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.gameDetailHeader {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.gameDetailText {
+    font-size: 1em;
+}
+
+/* test button */
+.gamesButton {
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    width:200px; 
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+  
+  .gamesButton:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(80, 80, 80);
+  }
+
+  .uploadButton {
+    border: 0.8px solid rgb(255, 255, 255);
+    color: white;
+    background-color: transparent;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+    font-weight: bold;
+    margin: 2px 1px;
+    width:80px; 
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.uploadButton:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(80, 80, 80);
+  }
+
+  .buyButton {
+    border: 2px solid rgb(105, 243, 78);
+    color: white;
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    width:200px; 
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+  
+  .buyButton:hover {
+    background-color: rgb(105, 243, 78);
+    color: white;
+  }
+  .newsButton {
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    background-color: transparent;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    width:623.33px; 
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .newsButton:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(80, 80, 80);
+  }
+
+  .credentialsInput {
+      border:none;
+      outline:none;
+      background-color:rgb(243, 243, 243);
+      padding:5px;
+      color:black;
+  }
+
+
+  .credentialsInput:hover {
+    border:none;
+    outline:none;
+    background-color:rgb(226, 226, 226);
+    padding:5px;
+}
+.loginUserForm1 {
+    justify-content: center;
+    text-align: center;
+    vertical-align: center;
+    background-color: white;
+    border: white;
+    border-style: solid;
+    margin: auto;
+    padding: 10px;
+    width: 250px;
+    height: 275px;
+}
+
+.loginButton {
+    border: 2px solid purple;
+    color: purple;
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    width:200px; 
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.loginButton:hover {
+    background-color: purple;
+    color:white;
+  }
+
+.accountBackground {
+    background-color: purple;
+    width:260px;
+    height:318px;
+    margin:0 auto;
+}
+.accountBackground1 {
+    background-color: purple;
+    width:260px;
+    height:443px;
+    margin:0 auto;
+}
+
+.registerUserForm1 {
+    justify-content: center;
+    text-align: center;
+    vertical-align: center;
+    background-color: white;
+    border: white;
+    border-style: solid;
+    margin: auto;
+    padding: 10px;
+    width: 250px;
+    height: 400px;
+}
+
+
