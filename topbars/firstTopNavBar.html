@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand navbar-dark fixed-top" style="background:#492056" height="40px">
+<button class="navbar-toggler pull-left" type="button" data-toggle="collapse" data-target="#navSupportedContent">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-center" id="navSupportedContent">
+    <ul class="navbar-nav nav-fill">
+        <li class="nav-item active " position="absolute" id="brand">
+            <a class="navbar-brand" position="absolute" href="/">
+                <img src="images/game_controller_white.png" width="35" height="35" >
+            </a>
+        </li>
+        <li class="nav-item active menu" id="about">
+            <a class="nav-link" href="about.html" >About</a>
+        </li>
+        <li class="nav-item active menu" id="games">
+            <a class="nav-link" href="games.html" >Games</a>
+        </li>
+        <li class="nav-item active menu" id="news">
+                <a class="nav-link" href="news.html" onclick="getNews()" id="about" >News</a>
+        </li>
+        <li class="nav-item active menu" id="community">
+            <a class="nav-link" href="videos.html">Videos</a>
+        </li>
+        <li>
+            <a class="nav-item nav-link active curP" id="search"><img src="images/search.png" width="18" height="18" ></a>
+        </li>
+        <li>
+            <a class="nav-item nav-link active menu curP" onclick="checkInSession()" id="usericon"><img src="images/usericon.png" width="18" height="18" ></a>
+        </li>
+    </ul>
+    <div class="search-form ">
+        <form method="get">
+        <img id="presstosearchbtn" class="presstosearch" src="images/search.png" onclick="showSearch()" width="18" height="18" background-color="transparent" color="white" border="none" outline="none">
+        <input id="searchfield" type="search" onsearch="showSearch()" name="" placeholder="Search by Title..." autocomplete="off" autofocus>
+        </form>
+    </div>
+    <a class="close" id="close"><img src="images/close.png" width="18" height="18"></a>
+</div>
+</nav>
