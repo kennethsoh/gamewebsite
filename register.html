@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="cover">
+    <head>
+        <title>The Casual Gamer</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="/images/game_controller.png">
+        <link rel="stylesheet" href="css/mystyle.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        
+        <sciprt src="js/cookieMonster.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script> 
+        <script src="js/games.js"></script>
+        <script src="js/search.js"></script>
+        <script src="js/news.js"></script>
+        <script src="js/users.js"></script>
+        
+    </head>
+    <body id="wallpaper" class="cover">
+        <!--Navigation Bar-->
+        <div w3-include-html="topbars/firstTopNavBar.html"></div>
+        
+        <div>
+        <h2 class="whiteTxt userFrontHeader">Gamer ID</h2>
+        </div>
+        
+        <div style="height:473px;"class="accountBackground1">
+        <h4 style="margin:10 auto;display:block; text-align:center;color:white;">Sign Up</h4>
+        <div style="height:430px;"class="registerUserForm1">
+            <br>
+            <input class="credentialsInput" id="usernameRegister" type="text" name="" placeholder="Username" autocomplete="off" required="yes"/><br><br>
+            <input class="credentialsInput" id="passwordRegister" type="password" name="" placeholder="Password" autocomplete="off" required="yes"/><br><br>
+            <input class="credentialsInput" id="emailRegister" type="text" name="" placeholder="Email Address" autocomplete="off" required="yes"/><br><br>
+            <input class="credentialsInput" style="width:190px;" id="dobRegister" type="date" name="" placeholder="Date of Birth" max="01/01/2019" min="01/01/1950" autocomplete="off" required="yes"/><br><br>
+            <select id="genderRegister" required="yes" class="credentialsInput" style="float:left;margin:0px 100px 10px 15px;width:195px;">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <h6 style="font-size:10px">Already have an Account?  <a style="font-size:10px" href="login.html">Login here</a></h6><br>
+            <button class="loginButton" id="registerButton" type="submit" style="width:120px, padding:10px;" onclick="register()">Sign Up</button>
+            <h6 style="font-size:9px">By signing up, you agree to the <a style="font-size:9px" href="https://privacypolicies.com/privacy/view/d34155cdde605fef75c344fff34a3cc6" target="_blank">privacy policy</a></h6>
+        </div>
+        </div>
+
+        <!--About Message modal-->
+        <div w3-include-html="about-modal.html"></div>
+        <!--Footer-->
+        <!--Footer-->
+        <footer style="position: absolute">
+            <div> 
+            Copyright &copy; Temasek Polytechnic | 2018/19
+            </div>
+        </footer>
+    </body>
+
+    <script src="js/w3.js"></script>
+    <script>w3.includeHTML();</script>
+    <!--Script for search bar -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript"> $(document).ready(function() {
+        $('#search').click(function(){
+            $('.menu').addClass('hide-item');
+            $('.search-form').addClass('active');
+            $('.close').addClass('active');
+            $('#search').hide();
+        })
+        $('#close').click(function() {
+            $('.menu').removeClass('hide-item');
+            $('.search-form').removeClass('active');
+            $('.close').removeClass('active');
+            $('#search').show(); 
+        })
+    })
+
+        var input = document.getElementById("usernameRegister") && document.getElementById("passwordRegister") && document.getElementById("emailRegister") && document.getElementById("dobRegister");
+        input.addEventListener("keyup", function(event) {
+            //Prevent all other keys from triggering click
+            event.preventDefault();
+            // Keycode 13 is the "Enter" key
+            if (event.keyCode === 13) {
+                document.getElementById("registerButton").click();
+            }
+        });
+    </script>
+    <script> $('#usericon').click(checkInSession);
+    </script>
+</html>

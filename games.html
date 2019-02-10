@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Casual Gamer</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="/images/game_controller.png">
+        <link rel="stylesheet" href="css/mystyle.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script> 
+        <script src="js/home.js"></script>
+        <script src="js/games.js"></script>
+        <script src="js/search.js"></script>
+        <script src="js/news.js"></script>
+        <script src="js/users.js"></script>
+        <script src="js/reviews.js"></script>
+        
+    </head>
+    <body onload="getGames()" id="wallpaper">
+        <!--Main Navigation Bar-->
+        <div w3-include-html="topbars/firstTopNavBar.html"></div>
+        <div w3-include-html="topbars/gamesTopNavBar.html"></div>
+
+        
+        
+        <!-- This is the container that holds everything -->
+        <div class="container">
+            <!-- Displays thumbnails of the games here -->
+            <div id="gamesTable1" class="row">
+                <div id="gamesTable1L" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable1CL" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable1CR" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable1R" class="col-sm-3 col-md-offset-5"></div>
+            </div>
+            <br>
+            <div id="gamesTable2" class="row">
+                <div id="gamesTable2L" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable2CL" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable2CR" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable2R" class="col-sm-3 col-md-offset-5"></div>
+            </div>
+            <br>
+            <div id="gamesTable3" class="row">
+                <div id="gamesTable3L" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable3CL" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable3CR" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable3R" class="col-sm-3 col-md-offset-5"></div>
+            </div>
+            <br>
+            <div id="gamesTable4" class="row">
+                <div id="gamesTable4L" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable4CL" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable4CR" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable4R" class="col-sm-3 col-md-offset-5"></div>
+            </div>
+            <br>
+            <div id="gamesTable5" class="row">
+                <div id="gamesTable5L" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable5CL" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable5CR" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable5R" class="col-sm-3 col-md-offset-5"></div>
+            </div>
+            <br>
+            <div id="gamesTable6" class="row">
+                <div id="gamesTable6L" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable6CL" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable6CR" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable6R" class="col-sm-3 col-md-offset-5"></div>
+            </div>
+            <br>
+            <div id="gamesTable7" class="row">
+                <div id="gamesTable7L" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable7CL" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable7CR" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable7R" class="col-sm-3 col-md-offset-5"></div>
+            </div>
+            <br>
+            <div id="gamesTable8" class="row">
+                <div id="gamesTable8L" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable8CL" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable8CR" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable8R" class="col-sm-3 col-md-offset-5"></div>
+            </div>
+            <br>
+            <div id="gamesTable9" class="row">
+                <div id="gamesTable9L" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable9CL" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable9CR" class="col-sm-3 col-md-offset-5"></div>
+                <div id="gamesTable9R" class="col-sm-3 col-md-offset-5"></div>
+            </div>
+        </div>
+        <br>
+
+        <!--About Message modal-->
+        <div w3-include-html="about-modal.html"></div>
+        <!--Footer-->
+        <div w3-include-html="footer.html"></div>
+    </body>
+
+    <script src="js/w3.js"></script>
+    <script>w3.includeHTML();</script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript"> $(document).ready(function() {
+        $('#search').click(function(){
+            $('.menu').addClass('hide-item');
+            $('.search-form').addClass('active');
+            $('.close').addClass('active');
+            $('#search').hide();
+        })
+        $('#close').click(function() {
+            $('.menu').removeClass('hide-item');
+            $('.search-form').removeClass('active');
+            $('.close').removeClass('active');
+            $('#search').show(); 
+        })
+    })
+    </script>
+</html>

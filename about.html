@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Casual Gamer</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="/images/game_controller.png">
+        <link rel="stylesheet" href="css/mystyle.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script> 
+        <script src="js/home.js"></script>
+        <script src="js/games.js"></script>
+        <script src="js/search.js"></script>
+        <script src="js/news.js"></script>
+        <script src="js/users.js"></script>
+        <script src="js/reviews.js"></script>
+    
+
+        
+    </head>
+    <body onload="homeCheckInSession()" id="wallpaper">
+        <!--Navigation Bar-->
+        <div w3-include-html="topbars/firstTopNavBar.html"></div>
+        
+        <!-- This is the container that holds everything -->
+        <div class="container">
+            <p><h3 class="whiteTxt" style="text-align: center" >About</h3></p>
+            <div class="row">
+                <div class="col-sm-2 col-md-offset-5"></div>
+                <div class="whiteTxt col-sm-8 col-md-offset-5"><b>The Casual Gamer</b> is an academic game review website that aims to help causal gaming youths and young adults find
+                games to play on PC, Console and Mobile platforms.</div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-2 col-md-offset-5"></div>
+                <div class="whiteTxt col-sm-8 col-md-offset-5">Through this website, various web technologies are demonstrated such as
+                HTML, CSS, Javascript and RESTful web APIs. Full website project code can be found on sgguy/gamewebsite GitHub repository.</div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-2 col-md-offset-5"></div>
+                <div class="whiteTxt col-sm-8 col-md-offset-5">By logging in or signing up for a user account, you agree to the <a style="color:white" href="https://privacypolicies.com/privacy/view/d34155cdde605fef75c344fff34a3cc6" target="_blank"><u>privacy policy</u></a></div>
+            </div>
+            <br>
+            <br>
+            <p><h3 class="whiteTxt" style="text-align: center" >The Web Developer</h3></p>
+            <div class="row">
+                <div class="col-sm-2 col-md-offset-5"></div>
+                <div class="col-sm-2 col-md-offset-5"><img id="myPic"class="mypic img-thumbnail" src="images/profilepic.png"/></div>
+                <div class="whiteTxt col-sm-6 col-md-offset-5">Kenneth is a year 1 student at Temasek Polytechnic, studying for a diploma in Cybersecurity and
+                Digital Forensics.<br><br> For queries regarding this website, you may contact him via email at 1800932D@student.tp.edu.sg</div>
+            </div>
+            <br>
+        </div>
+        
+
+
+        <!--About Message modal-->
+        <div w3-include-html="about-modal.html"></div> 
+        
+        <!--Footer-->
+        <div w3-include-html="footer.html"></div>
+     
+    </body>
+
+    <script src="js/w3.js"></script>
+    <script>w3.includeHTML();</script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript"> $(document).ready(function() {
+        $('#search').click(function(){
+            $('.menu').addClass('hide-item');
+            $('.search-form').addClass('active');
+            $('.close').addClass('active');
+            $('#search').hide();
+        })
+        $('#close').click(function() {
+            $('.menu').removeClass('hide-item');
+            $('.search-form').removeClass('active');
+            $('.close').removeClass('active');
+            $('#search').show(); 
+        })
+    })
+    </script>
+</html>

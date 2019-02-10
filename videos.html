@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Casual Gamer</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="/images/game_controller.png">
+        <link rel="stylesheet" href="css/mystyle.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script> 
+        <script src="js/home.js"></script>
+        <script src="js/games.js"></script>
+        <script src="js/search.js"></script>
+        <script src="js/news.js"></script>
+        <script src="js/users.js"></script>
+        <script src="js/reviews.js"></script>
+        
+        
+        
+    </head>
+    <body id="wallpaper">
+        <!--Navigation Bar-->
+        <div w3-include-html="topbars/firstTopNavBar.html"></div>
+    
+        <div class="container">
+            <p><h3 class="whiteTxt" style="text-align: center" >Gaming Videos</h3></p>
+            <div class="row">
+                <iframe class="col-sm-3 col-md-offset-5" src="https://www.youtube.com/embed/Ux0tfIPnRyc" frameborder="0" allowfullscreen></iframe>
+                <iframe class="col-sm-3 col-md-offset-5" src="https://www.youtube.com/embed/0kvIagR4oQY" frameborder="0" allowfullscreen></iframe>
+                <iframe class="col-sm-3 col-md-offset-5" src="https://www.youtube.com/embed/nYYB4fjZTqc" frameborder="0" allowfullscreen></iframe>
+                <iframe class="col-sm-3 col-md-offset-5" src="https://www.youtube.com/embed/px0SF43Pahw" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <br>
+            <div class="row">
+                <iframe class="col-sm-3 col-md-offset-5" src="https://www.youtube.com/embed/f1BtkDe4TDc" frameborder="0" allowfullscreen></iframe>
+                <iframe class="col-sm-3 col-md-offset-5" src="https://www.youtube.com/embed/_q51LZ2HpbE" frameborder="0" allowfullscreen></iframe>
+                <iframe class="col-sm-3 col-md-offset-5" src="https://www.youtube.com/embed/wV2Gx9U8yX8" frameborder="0" allowfullscreen></iframe>
+                <iframe class="col-sm-3 col-md-offset-5" src="https://www.youtube.com/embed/QsJwU7_CRjA" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <br>
+            <div class="row">
+                <iframe class="col-sm-3 col-md-offset-5" src="https://www.youtube.com/embed/58SdS09xFl8" frameborder="0" allowfullscreen></iframe>
+                <iframe class="col-sm-3 col-md-offset-5" src="https://www.youtube.com/embed/Q19apeXtGXE" frameborder="0" allowfullscreen></iframe>
+                <iframe class="col-sm-3 col-md-offset-5" src="https://www.youtube.com/embed/STg-lGNo5sk" frameborder="0" allowfullscreen></iframe>
+                <iframe class="col-sm-3 col-md-offset-5" src="https://www.youtube.com/embed/yCVOCSlzQno" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <br>
+            <br>
+        </div>
+        
+
+        
+
+
+        <!--About Message modal-->
+        <div w3-include-html="about-modal.html"></div>
+        <!--Footer-->
+        <div w3-include-html="footer.html"></div>
+    </body>
+
+    <script src="js/w3.js"></script>
+    <script>w3.includeHTML();</script>
+    <script src="js/communityVideos.js"></script>
+    <!--Script for search bar -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript"> $(document).ready(function() {
+        $('#search').click(function(){
+            $('.menu').addClass('hide-item');
+            $('.search-form').addClass('active');
+            $('.close').addClass('active');
+            $('#search').hide();
+        })
+        $('#close').click(function() {
+            $('.menu').removeClass('hide-item');
+            $('.search-form').removeClass('active');
+            $('.close').removeClass('active');
+            $('#search').show(); 
+        })
+    })
+    </script>
+</html>
