@@ -1,4 +1,5 @@
 # gamewebsite
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This is an academic project for IIT Year 1 Semester 2, modules Coding and Development Project (CDEV) and Database Application Development (DBAV).
 
